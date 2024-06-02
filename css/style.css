@@ -1,3 +1,74 @@
 .hidden {
     display: none;
 }
+
+body {
+    display: flex;
+    height: 700px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    padding: 20px;
+}
+#weather {
+    position: absolute;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+    opacity: 80%;
+}
+
+#clock {
+    color: white;
+    font-size: 100px;
+    margin-bottom: 40px;
+}
+
+input {
+    margin-bottom: 20px;
+    font-size: 20px;
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    background-color: transparent;
+    outline: none;
+}
+input::placeholder {
+    color: white;
+    font-size: 20px;
+}
+
+ul {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 25px;
+}
+
+#quote {
+    position: absolute;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+
+    bottom: 0px;
+    margin-bottom: 10px;
+}
+
+h1,
+h2,
+span {
+    color: white;
+}
