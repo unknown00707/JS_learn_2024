@@ -9,8 +9,14 @@ function onGEoOk(position) {
         .then((data) => {
             const weaterContainer = document.querySelector('#weather span:first-child');
             const city = document.querySelector('#weather span:last-child');
+            const windSpeed = document.querySelector('#weather2 span:nth-child(1)');
+            const windDeg = document.querySelector('#weather2 span:nth-child(2)');
+            const press = document.querySelector('#weather2 span:nth-child(3)');
             city.innerText = data.name;
             weaterContainer.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+            windSpeed.innerText = `wind speed : ${data.wind.speed}`;
+            windDeg.innerText = `wind deg : ${data.wind.deg}`;
+            press.innerText = `pressure : ${data.main.pressure}`;
         });
 }
 

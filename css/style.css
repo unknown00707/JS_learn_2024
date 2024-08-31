@@ -20,6 +20,16 @@ body {
     opacity: 80%;
 }
 
+#weather2 {
+    position: absolute;
+    position: fixed;
+    top: 25px;
+    right: 0;
+    margin-right: 10px;
+    opacity: 60%;
+    font-size: 10px;
+}
+
 #clock {
     color: white;
     font-size: 100px;
